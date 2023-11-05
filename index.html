@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ToDo list app</title>
-    <link rel="stylesheet" href="CSS.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous">
 </head>
 <body>
-
-    <script src="JavaScript.js"></script>
-    <div id="myDIV" class="header">
-        <h2 style="margin:5px">My To Do List</h2>
-        <input type="text" id="myInput" placeholder="Title...">
-        <span onclick="newElement()" class="addBtn">Add</span>
+   
+    <div class="content">
+        <h2>My To-Do List</h2>
+        <div id="inputfield">
+            <input type="text" id="task" placeholder="add a task here">
+            <button id="addTask">Add</button>
+        </div>
+            <ul id="taskList"></ul>
     </div>
 
-    <ul id="myUL">
-        <li>Hit the gym</li>
-        <li class="checked">Pay bills</li>
-        <li>Meet George</li>
-        <li>Buy eggs</li>
-        <li>Read a book</li>
-        <li>Organize office</li>
-    </ul>
-
+    <script src="script.js"></script>
+    
+    
 </body>
 </html>
